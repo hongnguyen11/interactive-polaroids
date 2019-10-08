@@ -8,7 +8,7 @@ html {
   margin: 0;
   padding: 10px;
   width: 250px;
-
+  transition: .15s;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
@@ -17,8 +17,8 @@ html {
 }
 
 .polaroid:hover {
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, .9);
-  transition: all .2s linear;
+  z-index: 1000;
+  transform: rotate(0deg);
 }
 
 .polaroid:first-child {
@@ -28,7 +28,7 @@ html {
 }
 
 .polaroid:nth-child(2) {
-  z-index: 100;
+  z-index: 10;
 }
 
 .polaroid:last-child {
