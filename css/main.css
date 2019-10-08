@@ -1,6 +1,5 @@
 html {
   background-color: #e2e2e2;
-
   font-family: sans-serif;
 }
 
@@ -20,16 +19,18 @@ html {
   left: 250px;
   top: -50px;
   transform: rotate(-10deg);
+  z-index: 5;
 }
 
 .polaroid:nth-child(2) {
   z-index: 10;
 }
 
-.polaroid:last-child {
-  right: 250px;
+.polaroid:nth-child(3) {
+  right: 200px;
   top: -50px;
-  transform: rotate(20deg);
+  transform: rotate(35deg);
+  z-index: 6;
 }
 
 .polaroid > img {
@@ -40,6 +41,10 @@ html {
 .polaroid > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+  position: absolute;
+  bottom: 15px;
+  left: 35%;
+  right: auto;
 }
 
 .polaroid:hover {
@@ -52,5 +57,7 @@ body {
   display: flex;
   position: relative;
   justify-content: center;
-  margin-top: 15em;
+  margin-top: 9em;
+  margin-right: 4em;
+  left: -60px;
 }
